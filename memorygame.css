@@ -1,0 +1,57 @@
+.page-title {
+    font-size: 5rem;
+    text-align: center;
+    color: purple;
+    text-decoration: underline;
+}
+
+.game-container {
+    margin: 50px auto;
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    grid-gap: 20px;
+    justify-content: center;
+    perspective: 600px;
+}
+
+.card {
+        position: relative;
+        cursor: pointer;
+        height: 100px;
+        width: 100px;
+        transition: transform 1s;
+        transform-style: preserve-3d;
+}
+
+.card-face {
+    position: absolute;
+    background: teal;
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+    border-width: 3px;
+    border-style: solid;
+    border-color: magenta;
+    backface-visibility: hidden;
+}
+
+.card-front {
+    background: blue;
+    transform: rotateY(180deg);
+}
+
+.card.is-flipped {
+    transform: rotateY(180deg);
+  }
+
+.vabo {
+    height: 100%;
+    width: 100%;
+}
+
+.front-value{
+    height: 100%;
+    width: 100%;
+}
+
+
